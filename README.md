@@ -53,7 +53,7 @@ web/                  # React UI
 
 ```bash
 bun install
-bun install --cwd web
+bun --cwd web install
 ```
 
 ## Run (dev)

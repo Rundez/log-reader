@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "bun --hot server/index.ts",
-    "dev:web": "bunx --cwd web vite",
-    "build:web": "bunx --cwd web vite build",
+    "dev:web": "bun --cwd web run dev",
+    "build:web": "bun --cwd web run build",
     "build:exe": "bun build server/index.ts --compile --target=bun-windows-x64 --outfile dist/log-reader.exe",
     "build": "bun run build:web && bun run build:exe",
     "start": "bun server/index.ts"
