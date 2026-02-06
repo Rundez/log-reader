@@ -1,0 +1,14 @@
+{
+  "name": "log-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot server/index.ts",
+    "dev:web": "bunx --cwd web vite",
+    "build:web": "bunx --cwd web vite build",
+    "build:exe": "bun build server/index.ts --compile --target=bun-windows-x64 --outfile dist/log-reader.exe",
+    "build": "bun run build:web && bun run build:exe",
+    "start": "bun server/index.ts"
+  }
+}
